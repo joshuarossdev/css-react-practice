@@ -14,7 +14,7 @@ export default function RecipeList({ recipes }) {
           )
         })}
       </div>
-      <div className="recipe_list__add-recipe-btn-container">
+      <div className="recipe-list__add-recipe-btn-container">
         <button className="btn btn--primary">Add Recipe</button>
       </div>
 
