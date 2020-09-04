@@ -20,7 +20,7 @@ export default function Recipe(props) {
         </div>
       </div>
       <div>
-        <span>CookingTime: </span>
+        <span>Cook Time: </span>
         <span>{cookTime}</span>
       </div>
       <div>
