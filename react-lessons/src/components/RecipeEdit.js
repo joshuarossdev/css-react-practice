@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react'
 import RecipeIngredient from './RecipeIngredientEdit'
 import RecipeIngredientEdit from './RecipeIngredientEdit'
 
-export default function RecipeEdit() {
+export default function RecipeEdit({ recipe }) {
   return (
     <div className="recipe-edit">
       <div className="recipe-edit__remove-button-container">
@@ -18,6 +18,7 @@ export default function RecipeEdit() {
           type="text"
           name="name"
           id="name"
+          value={recipe.name}
           className="recipe-edit__input"/>
         <label
           htmlFor="Cook Time"
@@ -27,6 +28,7 @@ export default function RecipeEdit() {
         <input type="text"
           name="name"
           id="cookTime"
+          value={recipe.cookTime}
           className="recipe-edit__input"/>
         <label
           htmlFor="servings"
@@ -38,6 +40,7 @@ export default function RecipeEdit() {
           min="1"
           name="servings"
           id="servings"
+          value={recipe.servings}
           className="recipe-edit__input"/>
         <label
           htmlFor="instructions"
@@ -47,7 +50,9 @@ export default function RecipeEdit() {
         <textarea
           name="instrucitons"
           className="recipe-edit__input"
-          id="instructions" />
+          id="instructions">
+          {recipe.instructions}
+        </textarea>
       </div>
       <br />
       <label className="recipe-edit__label">
@@ -57,8 +62,12 @@ export default function RecipeEdit() {
         <div>Name</div>
         <div>Amount</div>
         <div></div>
-        <RecipeIngredientEdit />
-        <RecipeIngredientEdit />
+        {recipe.ingredients.map(ingredient => (
+          <RecipeIngredientEdit
+            key={ingredient.id}
+            ingredient={ingredient}
+          />
+        ))}
       </div>
       <div className="recipe-edit__add-ingredient-btn-container">
         <button className="btn btn--primary">Add Ingredients</button>
