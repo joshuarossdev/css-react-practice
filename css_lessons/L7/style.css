@@ -1,0 +1,17 @@
+.profile-name {
+  text-align: center;
+}
+
+.profile-hobbies,
+.profile-languages {
+  background-color: green;
+  color: white;
+}
+
+li:first-of-type {
+  color: cyan;
+}
+
+.profile-bands li:last-of-type {
+  text-decoration: line-through;
+}
