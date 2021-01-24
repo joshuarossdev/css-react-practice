@@ -1,4 +1,4 @@
-.profile-name {
+/* .profile-name {
   text-align: center;
 }
 
@@ -14,4 +14,21 @@ li:first-of-type {
 
 .profile-bands li:last-of-type {
   text-decoration: line-through;
+} */
+
+.header-text {
+  text-align: center;
+}
+
+.green-section {
+  background-color: green;
+  color: white;
+}
+
+.cyan {
+  color: cyan;
+}
+
+.cross-off {
+  text-decoration-line: line-through;
 }
