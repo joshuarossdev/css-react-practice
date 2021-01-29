@@ -12,9 +12,9 @@
     <h1 class="header-title">Joshua Ross</h1>
   </header>
   <main>
-    <section>
+    <section class="section">
       <h2>About Me</h2>
-      <p>
+      <p class="section-content">
         Lorem ipsum dolor sit amet consectetur adipisicing elit.
         Pariatur tenetur ipsum eaque laborum tempora eligendi perferendis
         beatae consequatur, doloremque minima nobis placeat deleniti fugiat
@@ -28,24 +28,26 @@
         dolor laboriosam, soluta quaerat amet quam corporis assumenda rem. Vel!
       </p>
     </section>
-    <section>
+    <section class="section section-accent">
       <h2>Skills</h2>
-      <ul>
+      <ul class="section-content skills-section">
+        <li>JavaScript</li>
         <li>CSS</li>
         <li>HTML</li>
         <li>React</li>
         <li>Ruby</li>
       </ul>
-    <section>
+    </section>
+    <section class="section">
       <h2>Project</h2>
-      <ul>
-        <li>
+      <ul class="section-content project-section">
+        <li class="project-list-item">
           <img src="https://source.unsplash.com/xfngap_DToE/150x150" alt="">
           <div>Lorem ipsum dolor sit amet consectetur adipisicing elit
             Pariatur tenetur ipsum eaque laborum tempora eligendi perferendis
             beatae consequatur, doloremque minima nobis placeat deleniti.</div>
         </li>
-        <li>
+        <li class="project-list-item">
           <img src="https://source.unsplash.com/random/150x150" alt="">
           <div>Lorem ipsum dolor sit amet consectetur adipisicing elit
             Pariatur tenetur ipsum eaque laborum tempora eligendi perferendis
@@ -53,23 +55,27 @@
         </li>
       </ul>
     </section>
+    <section class="section">
       <h2>Contact Me</h2>
-      <form>
+      <form class="section-content contact-section">
         <div>
           <label>Name</label>
         </div>
-        <input type="text">
+        <input class="input" type="text">
         <div>
           <label>Email</label>
         </div>
-        <input type="email">
+        <input class="input" type="email">
         <div>
           <label>Message</label>
         </div>
-        <textarea></textarea>
+        <textarea class="input input-no-resize"></textarea>
+        <div>
+          <button class="btn" type="submit">Send</button>
+        </div>
       </form>
     </section>
   </main>
-  <footer>Joshua Ross</footer>
+  <footer class="footer">Joshua Ross</footer>
 </body>
 </html>
